@@ -1,0 +1,11 @@
+.navigationBarWrapper {
+  background-color: orange;
+  padding: 1%;
+}
+.logotype {
+  width: 100px;
+  cursor: pointer;
+}
+.signIn {
+  cursor: pointer;
+}

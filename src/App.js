@@ -1,10 +1,20 @@
-import {Routes} from './routes/Routes'
+import React from 'react'
+import { Routes } from './routes/Routes'
+import { NavigationBar } from './components/navigationbar/NavigationBar'
+import { UserProvider } from './shared/provider/UserProvider'
+import './shared/css/GlobalCSS.css'
+
 function App() {
-  return (   
-      <Routes>
-        <h1>Hej devops 2020</h1>
-      </Routes>     
-  );
+    return (
+        <UserProvider>
+            <Routes>
+                <NavigationBar />
+            </Routes>
+        </UserProvider>
+    )
 }
 
-export default App;
+export default App
+
+
+
