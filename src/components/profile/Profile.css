@@ -1,0 +1,20 @@
+.profileDropDown {
+  position: absolute;
+  background-color: #f1f1f1;
+  /*display: none;*/
+  min-width: 170px;
+  padding: 10px;
+  margin-top: 1.9%;
+  z-index: 10;
+}
+.profieImg {
+  border-radius: 50%;
+  padding: 10%;
+}
+.profileDropDown span {
+  display: block;
+  padding: 2%;
+}
+.signIn:hover .profileDropDown {
+  display: block;
+}
