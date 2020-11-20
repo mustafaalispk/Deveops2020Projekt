@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import { UserContext } from '../shared/provider/UserProvider'
 import RoutingPath from '../routes/RoutingPath'
 import { useHistory } from 'react-router-dom'
+import BrowserCache from '../shared/utils/BrowserCache'
 
 export const SignInView = () => {
     // username är reference till värden och 
@@ -16,7 +17,7 @@ export const SignInView = () => {
     const login = (e) => {
         e.preventDefault()
         setAuthenticatedUser(username)
-        localStorage.setItem('username', username)
+        localStorage.setItem(BrowserCache.username, username)
         //sessionStorage.setItem('username', username)
         history.push(RoutingPath.HomeView)
     }
