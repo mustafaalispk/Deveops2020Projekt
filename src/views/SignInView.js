@@ -16,6 +16,8 @@ export const SignInView = () => {
     const login = (e) => {
         e.preventDefault()
         setAuthenticatedUser(username)
+        localStorage.setItem('username', username)
+        //sessionStorage.setItem('username', username)
         history.push(RoutingPath.HomeView)
     }
     return (
