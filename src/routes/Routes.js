@@ -29,7 +29,7 @@ export const Routes = (props) => {
     useEffect(() => {
         // Sedan anropas vid varje randering.
         checkIfUserAuthenticatedInBrowser()
-    })
+    }, [])
     return (
         <Router>
             {props.children}

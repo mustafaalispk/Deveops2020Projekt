@@ -24,7 +24,8 @@ export const SignInView = () => {
     return (
         <div>
             <form>
-                <span>Username: </span><input onChange={(event) => setUsername(event.target.value)} /><br />
+                <span>Username: </span>
+                <input onChange={(event) => setUsername(event.target.value)} /><br />
                 <span>Password: </span><input /><br />
                 <button onClick={(e) => login(e)}>Login</button>
             </form>
